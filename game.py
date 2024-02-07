@@ -6,7 +6,7 @@ from dungeons import*
 from settlements import*
 from maps import*
 from intro import Intro 
-import time
+#import time
 #import winsound
 
 gameloop=True
