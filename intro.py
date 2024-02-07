@@ -1,8 +1,8 @@
 import time
-import winsound
+#import winsound
 from animation import intro_animation
 def Intro():
-    winsound.PlaySound(".\\music\\intro.wav",  winsound.SND_ALIAS | winsound.SND_ASYNC +winsound.SND_LOOP)
+    #winsound.PlaySound(".\\music\\intro.wav",  winsound.SND_ALIAS | winsound.SND_ASYNC +winsound.SND_LOOP)
     intro_animation()   
     time.sleep(1)
     input("Press enter to begin your struggle")
@@ -59,7 +59,7 @@ hhhhhhhhhhhhhhhhhhhhhhhhhhhh                    hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
         print("                                                            ")
         input("Press enter to continue your struggle")
 
-    winsound.PlaySound(None,  winsound.SND_ALIAS)
+    #winsound.PlaySound(None,  winsound.SND_ALIAS)
 
     return name
 
