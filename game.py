@@ -7,7 +7,7 @@ from settlements import*
 from maps import*
 from intro import Intro 
 import time
-import winsound
+#import winsound
 
 gameloop=True
 
@@ -48,8 +48,8 @@ print("PRESS M + ENTER TO SWITCH MUSIC ON AND OFF.")
 print("                                                          ")
 
 
-music=0
-winsound.PlaySound(".\\music\\background.wav",  winsound.SND_ALIAS | winsound.SND_ASYNC +winsound.SND_LOOP)
+#music=0
+#winsound.PlaySound(".\\music\\background.wav",  winsound.SND_ALIAS | winsound.SND_ASYNC +winsound.SND_LOOP)
 
 
 #STEERT
@@ -84,7 +84,7 @@ while gameloop == True:
                 playerMap[y][x] = "@"
                 clear_screen_2()
                 print("Music off")
-                winsound.PlaySound(None,  winsound.SND_ALIAS)
+                #winsound.PlaySound(None,  winsound.SND_ALIAS)
                 music=1
                 break
             
@@ -93,8 +93,8 @@ while gameloop == True:
                 playerMap[y][x] = "@"
                 clear_screen_2()
                 print("Music on")
-                winsound.PlaySound(None,  winsound.SND_ALIAS)    
-                winsound.PlaySound(".\\music\\background.wav",  winsound.SND_ALIAS | winsound.SND_ASYNC +winsound.SND_LOOP)
+               #winsound.PlaySound(None,  winsound.SND_ALIAS)    
+               #winsound.PlaySound(".\\music\\background.wav",  winsound.SND_ALIAS | winsound.SND_ASYNC +winsound.SND_LOOP)
                 music=0
                 break
                 
